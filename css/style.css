@@ -21,9 +21,9 @@
 }
 
 .dark-mode{
-    --bg-color: #0b061f;
+    --bg-color: #0c0c0c;
     --text-color: #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .7);
+    --shadow-color: rgba(0, 0, 0, 0.7);
 }
 
 html{
