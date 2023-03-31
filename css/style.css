@@ -20,6 +20,12 @@
     --shadow-color: rgba(0, 0, 0, .2);
 }
 
+.dark-mode{
+    --bg-color: #0b061f;
+    --text-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .7);
+}
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -88,8 +94,13 @@ body{
 
 #darkMode-icon{
     font-size: 2.4rem;
-    background: var(--white-color);
+    color: var(--white-color);
     cursor: pointer;
+}
+
+.header.sticky #darkMode-icon{
+    color: var(--text-color);
+    opacity: .9;
 }
 
 section{
@@ -328,7 +339,13 @@ span{
     text-align: center;
     border-top: .6rem solid var(--main-color);
     border-bottom: .6rem solid var(--main-color);
+    transition: .5s ease;
 
+}
+
+.services-container .services-box:hover{
+    box-shadow: 0 .1rem 2rem var(--shadow-color);
+    transform: scale(1.02);
 }
 
 .services-box i{
@@ -338,6 +355,11 @@ span{
 
 .services-box h3{
     font-size: 2.6rem;
+    transition: .5s ease;
+}
+
+.services-box:hover h3{
+    color: var(--main-color);
 }
 
 .services-box p{
